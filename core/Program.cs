@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace active_directory_mvc
+namespace SamWronski.ActiveDirectoryExample.Auth
 {
     public class Program
     {

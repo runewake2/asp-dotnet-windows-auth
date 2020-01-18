@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Server.IISIntegration;
 
-namespace active_directory_mvc
+namespace SamWronski.ActiveDirectoryExample.Auth
 {
     public class Startup
     {

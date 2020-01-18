@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using active_directory_mvc.Models;
+using SamWronski.ActiveDirectoryExample.Models;
 
-namespace active_directory_mvc.Controllers
+namespace SamWronski.ActiveDirectoryExample.Controllers
 {
     public class HomeController : Controller
     {

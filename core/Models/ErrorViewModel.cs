@@ -1,6 +1,6 @@
 using System;
 
-namespace active_directory_mvc.Models
+namespace SamWronski.ActiveDirectoryExample.Models
 {
     public class ErrorViewModel
     {
