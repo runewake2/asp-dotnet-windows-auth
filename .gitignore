@@ -2,3 +2,8 @@
 **/bin/
 **/obj/
 **/.vs/
+
+# Ignore GMSA Cred Spec Files
+**/crdspec.json
+**/crdspec.yml
+**/crdspec.yaml
