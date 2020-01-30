@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Active Directory .netcore", "core\Active Directory .netcore.csproj", "{75638CC1-3637-4142-A0C9-6789D76D59B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Active Directory .netcore", "core\ActiveDirectory.netcore.csproj", "{75638CC1-3637-4142-A0C9-6789D76D59B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Active Directory .netframework", "framework\Active Directory .netframework.csproj", "{85750DE0-8928-418A-A460-13A4844FA6CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Active Directory .netframework", "framework\ActiveDirectory.netframework.csproj", "{85750DE0-8928-418A-A460-13A4844FA6CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

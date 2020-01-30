@@ -1,6 +1,8 @@
-*
-# Used by Visual Studio 'Docker' run
-!obj\Docker\publish\*
-!obj\Docker\empty\!
-# Manually configured publish folder
-!bin\docker\publish\*
+# *
+# # Used by Visual Studio 'Docker' run
+# !obj\Docker\publish\*
+# !obj\Docker\empty\!
+# # Manually configured publish folder
+# !bin\docker\publish\*
+**\bin
+**\obj
