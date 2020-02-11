@@ -1,5 +1,8 @@
-#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-#For more information, please see https://aka.ms/containercompat 
+# escape=`
+# Override Dockers default \ escape character. \ is common in Windows directories.
+
+# Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+# For more information, please see https://aka.ms/containercompat 
 
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2 AS build
 WORKDIR /app/
@@ -18,8 +21,8 @@ RUN msbuild /p:Configuration=Release
 
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2 AS runtime
 RUN powershell.exe Add-WindowsFeature Web-Windows-Auth
-RUN powershell.exe -NoProfile -Command \
-  Set-WebConfigurationProperty -filter /system.WebServer/security/authentication/AnonymousAuthentication -name enabled -value false -PSPath IIS:\ ; \
+RUN powershell.exe -NoProfile -Command `
+  Set-WebConfigurationProperty -filter /system.WebServer/security/authentication/AnonymousAuthentication -name enabled -value false -PSPath IIS:\ ; `
   Set-WebConfigurationProperty -filter /system.webServer/security/authentication/windowsAuthentication -name enabled -value true -PSPath IIS:\ ;
 WORKDIR /inetpub/wwwroot
 COPY --from=build /app/framework/. ./
